@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/merry/Documents/TintFPGA_AX2/TinyFPGA-A-Series-master/template_a2"  

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/merry/documents/tintfpga_ax2/tinyfpga-a-series-master/template_a2/tinyfpga_a2.v(1): </Dynamic>
+            <Dynamic>TinyFPGA_A2</Dynamic>
+            <Navigation>c:/users/merry/documents/tintfpga_ax2/tinyfpga-a-series-master/template_a2/tinyfpga_a2.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/merry/documents/tintfpga_ax2/tinyfpga-a-series-master/template_a2/tinyfpga_a2.v(62): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/users/merry/documents/tintfpga_ax2/tinyfpga-a-series-master/template_a2/tinyfpga_a2.v</Navigation>
+            <Navigation>62</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

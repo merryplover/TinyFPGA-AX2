@@ -1,0 +1,204 @@
+
+         Lattice Mapping Report File for Design Module 'TinyFPGA_A2'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-1200HC -t QFN32 -s 4 -oc Commercial
+     template_a2_impl.ngd -o template_a2_impl_map.ncd -pr template_a2_impl.prf
+     -mp template_a2_impl.mrp -lpf C:/Users/merry/Documents/TintFPGA_AX2/TinyFPG
+     A-A-Series-master/template_a2/impl/template_a2_impl.lpf -lpf C:/Users/merry
+     /Documents/TintFPGA_AX2/TinyFPGA-A-Series-master/template_a2/template_a2.lp
+     f -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-1200HCQFN32
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.2.446
+Mapped on:  03/03/20  21:38:04
+
+Design Summary
+--------------
+
+   Number of registers:     24 out of  1346 (2%)
+      PFU registers:           24 out of  1280 (2%)
+      PIO registers:            0 out of    66 (0%)
+   Number of SLICEs:        14 out of   640 (2%)
+      SLICEs as Logic/ROM:     14 out of   640 (2%)
+      SLICEs as RAM:            0 out of   480 (0%)
+      SLICEs as Carry:         13 out of   640 (2%)
+   Number of LUT4s:         27 out of  1280 (2%)
+      Number used as logic LUTs:          1
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       26
+      Number used as shift registers:     0
+   Number of PIO sites used: 18 + 4(JTAG) out of 22 (100%)
+   Number of block RAMs:  0 out of 7 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk: 13 loads, 13 rising, 0 falling (Driver: internal_oscillator_inst )
+     
+
+                                    Page 1
+
+
+
+
+Design:  TinyFPGA_A2                                   Date:  03/03/20  21:38:04
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net pin10_sda_c_22: 2 loads
+     Net pin11_scl_c_21: 2 loads
+     Net pin9_jtgnb_c_23: 2 loads
+     Net n102: 1 loads
+     Net n103: 1 loads
+     Net n104: 1 loads
+     Net n205: 1 loads
+     Net n206: 1 loads
+     Net n4: 1 loads
+     Net n5: 1 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| pin1                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin2                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin3_sn             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin4_mosi           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin5                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin6                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin7_done           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin8_pgmn           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin9_jtgnb          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin10_sda           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin11_scl           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  TinyFPGA_A2                                   Date:  03/03/20  21:38:04
+
+IO (PIO) Attributes (cont)
+--------------------------
+| pin16               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin17               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin18_cs            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin19_sclk          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin20_miso          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin21               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pin22               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal led_timer_54_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal led_timer_54_add_4_1/CI undriven or does not drive anything - clipped.
+Signal led_timer_54_add_4_25/S1 undriven or does not drive anything - clipped.
+Signal led_timer_54_add_4_25/CO undriven or does not drive anything - clipped.
+Block i71 was optimized away.
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                internal_oscillator_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk
+  OSC Nominal Frequency (MHz):                      2.08
+
+ASIC Components
+---------------
+
+Instance Name: internal_oscillator_inst
+         Type: OSCH
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 38 MB
+        
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights
+     reserved.

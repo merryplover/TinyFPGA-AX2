@@ -1,0 +1,312 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Mar 03 21:38:04 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     TinyFPGA_A2
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk]
+            311 items scored, 41 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.878ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             led_timer_54__i0  (from clk +)
+   Destination:    FD1S3AX    D              led_timer_54__i23  (to clk +)
+
+   Delay:                   5.718ns  (62.9% logic, 37.1% route), 14 logic levels.
+
+ Constraint Details:
+
+      5.718ns data_path led_timer_54__i0 to led_timer_54__i23 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.878ns
+
+ Path Details: led_timer_54__i0 to led_timer_54__i23
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              led_timer_54__i0 (from clk)
+Route         1   e 0.941                                  n24
+A1_TO_FCO   ---     0.827           A[2] to COUT           led_timer_54_add_4_1
+Route         1   e 0.020                                  n195
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_3
+Route         1   e 0.020                                  n196
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_5
+Route         1   e 0.020                                  n197
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_7
+Route         1   e 0.020                                  n198
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_9
+Route         1   e 0.020                                  n199
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_11
+Route         1   e 0.020                                  n200
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_13
+Route         1   e 0.020                                  n201
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_15
+Route         1   e 0.020                                  n202
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_17
+Route         1   e 0.020                                  n203
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_19
+Route         1   e 0.020                                  n204
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_21
+Route         1   e 0.020                                  n205
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_23
+Route         1   e 0.020                                  n206
+FCI_TO_F    ---     0.598            CIN to S[2]           led_timer_54_add_4_25
+Route         1   e 0.941                                  n102
+                  --------
+                    5.718  (62.9% logic, 37.1% route), 14 logic levels.
+
+
+Error:  The following path violates requirements by 0.701ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             led_timer_54__i0  (from clk +)
+   Destination:    FD1S3AX    D              led_timer_54__i21  (to clk +)
+
+   Delay:                   5.541ns  (62.1% logic, 37.9% route), 13 logic levels.
+
+ Constraint Details:
+
+      5.541ns data_path led_timer_54__i0 to led_timer_54__i21 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.701ns
+
+ Path Details: led_timer_54__i0 to led_timer_54__i21
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              led_timer_54__i0 (from clk)
+Route         1   e 0.941                                  n24
+A1_TO_FCO   ---     0.827           A[2] to COUT           led_timer_54_add_4_1
+Route         1   e 0.020                                  n195
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_3
+Route         1   e 0.020                                  n196
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_5
+Route         1   e 0.020                                  n197
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_7
+Route         1   e 0.020                                  n198
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_9
+Route         1   e 0.020                                  n199
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_11
+Route         1   e 0.020                                  n200
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_13
+Route         1   e 0.020                                  n201
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_15
+Route         1   e 0.020                                  n202
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_17
+Route         1   e 0.020                                  n203
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_19
+Route         1   e 0.020                                  n204
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_21
+Route         1   e 0.020                                  n205
+FCI_TO_F    ---     0.598            CIN to S[2]           led_timer_54_add_4_23
+Route         1   e 0.941                                  n104
+                  --------
+                    5.541  (62.1% logic, 37.9% route), 13 logic levels.
+
+
+Error:  The following path violates requirements by 0.701ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             led_timer_54__i0  (from clk +)
+   Destination:    FD1S3AX    D              led_timer_54__i22  (to clk +)
+
+   Delay:                   5.541ns  (62.1% logic, 37.9% route), 13 logic levels.
+
+ Constraint Details:
+
+      5.541ns data_path led_timer_54__i0 to led_timer_54__i22 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 0.701ns
+
+ Path Details: led_timer_54__i0 to led_timer_54__i22
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              led_timer_54__i0 (from clk)
+Route         1   e 0.941                                  n24
+A1_TO_FCO   ---     0.827           A[2] to COUT           led_timer_54_add_4_1
+Route         1   e 0.020                                  n195
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_3
+Route         1   e 0.020                                  n196
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_5
+Route         1   e 0.020                                  n197
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_7
+Route         1   e 0.020                                  n198
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_9
+Route         1   e 0.020                                  n199
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_11
+Route         1   e 0.020                                  n200
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_13
+Route         1   e 0.020                                  n201
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_15
+Route         1   e 0.020                                  n202
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_17
+Route         1   e 0.020                                  n203
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_19
+Route         1   e 0.020                                  n204
+FCI_TO_FCO  ---     0.157            CIN to COUT           led_timer_54_add_4_21
+Route         1   e 0.020                                  n205
+FCI_TO_F    ---     0.598            CIN to S[2]           led_timer_54_add_4_23
+Route         1   e 0.941                                  n103
+                  --------
+                    5.541  (62.1% logic, 37.9% route), 13 logic levels.
+
+Warning: 5.878 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |     5.000 ns|     5.878 ns|    14 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n199                                    |       1|      41|     99.00%
+                                        |        |        |
+n200                                    |       1|      41|     99.00%
+                                        |        |        |
+n201                                    |       1|      41|     99.00%
+                                        |        |        |
+n202                                    |       1|      41|     99.00%
+                                        |        |        |
+n198                                    |       1|      39|     95.12%
+                                        |        |        |
+n203                                    |       1|      39|     95.12%
+                                        |        |        |
+n197                                    |       1|      33|     80.49%
+                                        |        |        |
+n204                                    |       1|      33|     80.49%
+                                        |        |        |
+n196                                    |       1|      23|     56.10%
+                                        |        |        |
+n205                                    |       1|      23|     56.10%
+                                        |        |        |
+n24                                     |       1|       9|     21.95%
+                                        |        |        |
+n102                                    |       1|       9|     21.95%
+                                        |        |        |
+n195                                    |       1|       9|     21.95%
+                                        |        |        |
+n206                                    |       1|       9|     21.95%
+                                        |        |        |
+n22                                     |       1|       7|     17.07%
+                                        |        |        |
+n23                                     |       1|       7|     17.07%
+                                        |        |        |
+n103                                    |       1|       7|     17.07%
+                                        |        |        |
+n104                                    |       1|       7|     17.07%
+                                        |        |        |
+n20                                     |       1|       5|     12.20%
+                                        |        |        |
+n21                                     |       1|       5|     12.20%
+                                        |        |        |
+n105                                    |       1|       5|     12.20%
+                                        |        |        |
+n106                                    |       1|       5|     12.20%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 41  Score: 14758
+
+Constraints cover  311 paths, 61 nets, and 84 connections (96.6% coverage)
+
+
+Peak memory: 53538816 bytes, TRCE: 1757184 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

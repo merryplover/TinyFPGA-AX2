@@ -1,0 +1,7 @@
+#Start recording tcl command: 3/3/2020 21:18:55
+#Project Location: C:/Users/merry/Documents/TintFPGA_AX2/TinyFPGA-A-Series-master/template_a2; Project name: template_a2
+prj_project open "C:/Users/merry/Documents/TintFPGA_AX2/TinyFPGA-A-Series-master/template_a2/template_a2.ldf"
+prj_run Export -impl impl -task Jedecgen
+prj_run Export -impl impl -task Jedecgen
+prj_run Export -impl impl -task Jedecgen
+#Stop recording: 3/3/2020 22:18:28
